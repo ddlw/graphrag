@@ -10,7 +10,7 @@ pd.set_option("display.max_columns", None)
 
 
 async def create_test_context(storage: list[str] | None = None) -> PipelineRunContext:
-    """Create a test context with tables loaded into storage storage."""
+    """Create a test context with tables loaded into storage."""
     context = create_run_context()
 
     # always set the input docs, but since our stored table is final, drop what wouldn't be in the original source input
